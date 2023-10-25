@@ -1,0 +1,296 @@
+
+
+
+
+.rectangle {
+    height: 70px;
+    width: 1905px;
+    background-color: #000000;
+  }
+
+  #img{
+    margin-top: -10px;
+  }
+
+  #img1{
+    margin-left: 1200px;
+    margin-top: -140px;
+  }
+  #img2{
+    margin-left: 1330px;
+    margin-top: -186px;
+  }
+  #img3{
+    margin-left: 1370px;
+    margin-top: -235px;
+  }
+  #img4{
+    margin-left: 1420px;
+    margin-top: -286px;
+  }
+  .rectangle1 {
+    height: 90px;
+    width: 1905px;
+    background-color: #ff0000;
+  }
+  #img0{
+   margin-left: 80px;
+  }
+  #font{
+    font-family: 'Oswald', sans-serif;
+    margin-left: 680px;
+    margin-top: 20px;
+    color: white;
+  }
+
+ #s{
+  margin-left: 160px;
+ }
+
+ #img01{
+  height: 600px;
+  width: 550px;
+  margin-left: 10px;
+  margin-top: 30px;
+
+
+ }
+
+ #img02{
+ height: 600px;
+ width: 550px;
+ margin-left: 50px;
+ margin-top: 30px;
+ }
+
+ #img03{
+  height: 600px;
+  width: 550px;
+  margin-left: 80px;
+  margin-top: 30px;
+ }
+ .square{
+     height: 100px;
+     width: 20px;
+     color: rgb(255, 0, 0);
+ }
+ 
+ .square1{
+     height: 100px;
+     width: 20px;
+     color: rgb(255, 0, 0);
+ }
+ #moni{
+  width: 800px;
+  margin-top: 60px;
+ }
+
+ #pp{
+  width: 800px;
+  margin-left: 80px; 
+  margin-top: 60px;
+ }
+
+ #link{
+  margin-left: 870px;
+  margin-top: 50px;
+  color: red;
+  font-family: 'Oswald', sans-serif;
+ }
+ #rg{
+  font-family: 'Oswald', sans-serif;
+  margin-left:780px;
+  margin-top: 60px;
+ }
+ #w{
+  font-family: 'Saira Condensed', sans-serif;
+ }
+ #a1{
+  height: 300px;
+  width: 430px;
+  margin-left: 190px;
+  margin-top: 70px;
+ }
+ #a2{
+  height: 300px;
+  width: 430px;
+  margin-left: 190px;
+  margin-top: 70px;
+ }
+ #a3{
+  height: 300px;
+  width: 430px;
+  margin-left: 190px;
+  margin-top: 70px;
+ }
+ #game{
+  margin-left: 185px;
+  }
+  #ally{
+    margin-left: 505px;
+    }
+    #game1{
+      margin-left: 1430px;
+      margin-top: -60px;
+      }
+      #p{
+        font-family: 'Ropa Sans', sans-serif;
+        margin-left: 130px;
+        font-size: x-large;
+        margin-top: -20px;
+        
+      }
+      #ppp{
+        font-family: 'Ropa Sans', sans-serif;
+        font-size: medium;
+        margin-left: 130px;
+        margin-top: -20px;
+      }
+   #s{
+    margin-left: 800px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: x-large;
+    margin-top: -75px;
+   }
+   #d{
+    margin-left: 800px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: medium;
+    margin-top: -20px;
+   }
+   #f{
+    margin-left: 1430px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: x-large;
+    margin-top: -75px;
+   }
+   #g{
+    margin-left: 1430px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: small;
+    margin-top: -20px;
+   }
+   #link1{
+    margin-left: 870px;
+    margin-top: 50px;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+   }
+   
+
+  #e{
+    font-family: 'Oswald', sans-serif;
+  }
+  #e1{
+    margin-top: 60px;
+    margin-left: 500px;
+    
+  }
+  #last1{
+    height: 500px;
+    width: 1900px;
+    object-fit: fill;
+    margin-left: -310px;
+  }
+  #lo{
+    margin-top: -300px;
+    margin-left: 830px;
+    color: white;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    
+  }
+  #lo1{
+    font-family: 'Ropa Sans', sans-serif;
+  }
+
+  #last11{
+    height: 500px;
+    width: 1893px;
+    object-fit: fill;
+    
+    margin-top: 148px;
+  }
+  #w{
+    margin-top: -460px;
+    margin-left: 190px;
+    font-size: larger;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+  }
+ #fb{
+  
+  margin-left: 1250px;
+  
+ }
+ #line{
+  color: white;
+  margin-top: -70px;
+ }
+ #yt{
+  
+  margin-left: 1350px;
+  margin-top: -70px;
+  
+ }
+ #tw{
+  
+  margin-left: 1450px;
+  margin-top: -120px;
+  
+ }
+ #insta{
+  
+  margin-left: 1550px;
+  margin-top: -160px;
+  width: 80px;
+  
+ }
+ #ws{
+  
+  margin-left: 1650px;
+  margin-top: -210px;
+  width: 70px;
+  
+ }
+ #dis{
+  
+  margin-left: 1750px;
+  margin-top: -260px;
+  width: 70px;
+  
+ }
+ #en{
+  color: white;
+  margin-left: 40px;
+ }
+ #en1{
+  color: white;
+  margin-left: 20px;
+  margin-top: -16px;
+ }
+ #tem{
+  color: white;
+  margin-left: 1300px;
+  margin-top: -30px;
+  font-family: 'Dosis', sans-serif;
+ }
+ #tem1{
+  color: white;
+  margin-left: 1450px;
+  margin-top: -28px;
+  font-family: 'Dosis', sans-serif;
+ }
+ #tem2{
+  color: white;
+  margin-left: 1550px;
+  margin-top: -23px;
+  font-family: 'Dosis', sans-serif;
+  font-size: smaller;
+ }
+    
+  
+
+  
+ 
