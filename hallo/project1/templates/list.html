@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body_block %}
+    <table>
+        
+
+        <tr>
+            <th>name</th>
+            <th>phone</th>
+            <th>address</th>
+            <th>location</th>
+            
+        </tr>
+        {% for i in l %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.phone}}</td>
+            <td>{{i.address}}</td>
+            <td>{{i.location}}</td>
+        </tr>
+        
+        {% endfor %}
+    </table>
+    {% endblock %}
+</body>
+</html>
