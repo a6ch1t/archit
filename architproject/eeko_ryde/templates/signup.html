@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+	{% block css %}
+	<style>
+
+body{
+        background-image: url("https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+        }
+    .dropdown-menu{opacity: 0.8;
+    }
+    .signup{
+        margin: auto  ;
+        padding: 170px;
+        width: max-content ;
+        height: max-content;
+    }
+    .start{
+        margin: auto;
+        padding: auto;
+        width: max-content ;
+        height: max-content;
+    }
+    .modal-dialog{
+        width: 40%;
+        height: 30%;
+        top: 20%;
+    }
+    #done .modal-dialog{
+        margin: auto  ;
+        padding: 55px;
+    }
+    glyphicon glyphicon-ok{
+        color: #00b3ee;
+    }
+
+	</style>
+{% endblock css %}
+<body>
+	
+
+		<!--Navbar-->
+	  <div class="navbar navbar-nav  navbar-fixed-top "> <!--scroll with the screen, or we use static-->
+		  <div class="container">
+				  <div class="navbar-brand">
+					  <a href="#"> <span class="glyphicon glyphicon-home" id="home" aria-hidden="true"></span>
+					  </a>
+				  </div>
+			  <div class="navbar-collapse ">
+				  <ul class="nav navbar-nav navbar-right">
+					  <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span></a></li>
+					  <li><a href="#"><span class="glyphicon glyphicon-wrench"></span></a></li>
+					  <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+					  <li><a href="#"><span class="glyphicon glyphicon-off"></span></a></li>
+					  <li><a href="#" classe="dropdown-toggle" data-toggle="dropdown">+More<span class="caret"></span></a>
+						  <ul class="dropdown-menu" >
+							  <li><a href="#">Q/A</a></li>
+							  <li><a href="#">Contact</a></li>
+							  <li class="divider"></li>
+							  <li ><a href="#"><prem>Pro <span class="glyphicon glyphicon-star"></a></li>
+						  </ul>
+					  </li>
+				  </ul>
+			  </div>
+		  </div>
+	  </div>
+	  
+	  <div class=" signup">
+		  <button class=" btn btn-info animated bounce signupbtn"  data-toggle="modal" data-target="#signinup">Sign Up</button>
+	  </div>
+	  <!--First Modal-->
+	  <div class="modal fade " id="signinup">
+		  <div class="modal-dialog modal-content">
+			  <div class="modal-header">
+				  <input type="text" class="form-control" placeholder="User Name">
+				  <input type="password" class="form-control" placeholder="Password">
+			  </div>
+			  <div class="modal-body start">
+				  <input class="btn btn-info animated bounceInRight" type="submit" data-toggle="modal" data-target="#next"data-dismiss="modal"  value="Next" >
+			  </div>
+		  </div>
+	  </div>
+	  <!--Second Modal-->
+	  <div class="modal fade " id="next">
+		  <div class="modal-dialog modal-content">
+			  <div class="modal-header">
+				  <input type="text" class="form-control"  placeholder="Number Phone">
+				  <input type="text" class="form-control"  placeholder="Email" >
+			  </div>
+			  <div class="modal-body start">
+				  <input class="btn btn-info animated bounceInRight" type="submit" value="Start !"  data-toggle="modal" data-dismiss="modal" data-target="#done" >
+			  </div>
+		  </div>
+	  </div>
+	  <!--Third Modal-->
+	  <div class="modal fade" id="done">
+		  <div class="modal-dialog  ">
+			  <div class="modal-body start ">
+				  <button class="btn btn-info animated bouce"  data-dismiss="modal">Done <span class="glyphicon glyphicon-ok"></span></button>
+			  </div>
+		  </div>
+	  </div>
+	  {% endblock %}
+</body>
+</html>
