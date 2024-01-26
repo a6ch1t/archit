@@ -1,0 +1,48 @@
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col">
+                <input type="checkbox" id="1" name="ev" value="1" onclick="selectOnlyThis(this.id)"/>EV
+                <input type="checkbox" id="2" name="Normal" value="1" onclick="selectOnlyThis(this.id)"/>Normal
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <select style="border-radius:10px ;height: 50px; width: 350px;background-color: #ffffff;" name="start" id="start">
+                            <option value="">Choose Your "PICK-UP" location</option>
+                            {% for i in locate %}
+                            <option value="{{i.location}}" >{{i.location}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <select style="border-radius:10px; height: 50px; width: 350px; margin-top: 60px; background-color: #ffffff; " name="ends" id="ends">
+                            <option value="">Choose Your "DROP-OFF" location</option>
+                            {% for i in locate %}
+                            <option value="{{i.location}}">{{i.location}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input style="border-radius:5px;height: 50px;width: 125px; margin-top: 60px; background-color: #ffffff;" type="submit" value="Checkout">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    function selectOnlyThis(id) {
+        for (var i =1; i<=2; i++)
+        {
+            document.getElementById(i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+    }
+</script>

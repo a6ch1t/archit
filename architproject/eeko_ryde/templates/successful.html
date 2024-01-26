@@ -10,6 +10,20 @@
 <body>
     {% block body_block %}
     your byke is on the way to pickup you
+    {{user}}
+    <br>
+    <label for="">departure:</label>
+    <h3>{{information.starting_location}}</h3><br>
+    <label for="">destination:</label>
+    <h3>{{information.ending_location}}</h3><br>
+    <label for="">vehicle type:</label>
+    <h4>{{information.typey}}</h4><br>
+    <label for="">total amount:</label>
+    <h3>{{information.price}}</h3>
+
+    <br>
+
+    <a href="{% url 'checkout' %}">Checkout</a>
     {% endblock %}
 </body>
 </html>

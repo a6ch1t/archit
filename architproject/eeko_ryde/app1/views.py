@@ -69,6 +69,55 @@ def cart(request):
     l=Locate.objects.all()
     return render(request,'cart.html',{'locate':l})
 
-
+def checkoute(request):
+    l=Locate.objects.all()
+    if request.method=='POST':
+        starting=request.POST.get('start')
+        reaching=request.POST.get('ends')
+        type1=request.POST.get('Normal')
+        type2 =request.POST.get('ev')
+        ty1='normal-Bike'
+        ty2='EV-Bike'
+        a1=Locate.objects.get(location=starting)
+        b=a1.id
+        a2=Locate.objects.get(location=reaching)
+        b2=a2.id
+        print(type1,type2)
+        if type1 is not None:
+            if b < b2:
+                c=b2-b
+                charge=c*15
+                rydinfo= rydeinfo.objects.create(starting_location=starting, ending_location=reaching, typey=ty1, price=charge, user=request.user)
+                rydinfo.save()
+                return redirect(byke)
+            elif b2 < b:
+                c=b-b2
+                charge=c*15
+                rydinfo= rydeinfo.objects.create(starting_location=starting, ending_location=reaching, typey=ty1, price=charge, user=request.user)
+                rydinfo.save()
+                return redirect(byke)
+            else:
+                return redirect(checkoute)
+        elif type2 is not None:
+            if b < b2:
+                c=b2-b
+                charge=c*17
+                rydinfo= rydeinfo.objects.create(starting_location=starting, ending_location=reaching, typey=ty2, price=charge, user=request.user)
+                rydinfo.save()
+                return redirect(byke)
+            elif b2 < b:
+                c=b-b2
+                charge=c*17
+                rydinfo= rydeinfo.objects.create(starting_location=starting, ending_location=reaching, typey=ty2, price=charge, user=request.user)
+                rydinfo.save()
+                return redirect(byke)
+            else:
+                return redirect(checkoute)
+        else:
+            return redirect(checkoute)
+        
+    return render(request,'forme.html',{'locate':l})
 def byke(request):
-    return render(request,'successful.html')
+    inf = rydeinfo.objects.all().order_by('-id').first()
+    return render(request,'successful.html',{'information':inf})
+

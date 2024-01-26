@@ -141,7 +141,7 @@
                             </h6>
                         </td>
                         <td>
-                            <input type="checkbox" name="ev"/>
+                            <input type="checkbox" name="ev">
                         </td>
 
 
@@ -156,29 +156,49 @@
               
         </div>
         <hr style="width:65%;text-align:left;margin-left:0">
-        <div class="row">
-            <div class="col">
-                <form action="" method="post">
-                    {% csrf_token %}
-                    
-                    <select style="border-radius:10px ; margin-top: 60px; margin-left: 280px; height: 50px; width: 350px;background-color: #ffffff;" name="start" id="start">
-                        <option value="">Choose Your "PICK-UP" location</option>
-                        {% for i in locate %}
-                        <option value="{{i.location}}" >{{i.location}}</option>
-                        {% endfor %}
-                    </select>
-                    <div class="row">
-                        <div class="col">
-                   
-                    <select style="border-radius:10px; height: 50px; margin-left: 280px; width: 350px; margin-top: 60px; background-color: #ffffff; " name="ends" id="end">
-                        <option value="">Choose Your "DROP-OFF" location</option>
-                        {% for i in locate %}
-                        <option value="{{i.location}}">{{i.location}}</option>
-                        {% endfor %}
-                    </select>
-                    <br><br>
-                    <button style="margin-left: 400px; background-color: #04233b;color: rgb(173, 169, 169);" href="{% url 'byke' %}" class="btn btn-primary">Checkout</button>
-                  </form>
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                        <label for="">EV:</label><br>
+                        <img  src="{% static 'images/byke2.jpg' %}" alt="" width="150px" height="130px">
+                        <input type="checkbox" name="ev"><br>
+                        <label for="">Normal :</label>
+                        <img  src="{% static 'images/byke1.jpg' %}" alt="" width="160px" height="130px">
+                        <input type="checkbox" name="Normal">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <select style="border-radius:10px ;height: 50px; width: 350px;background-color: #ffffff;" name="start" id="start">
+                                    <option value="">Choose Your "PICK-UP" location</option>
+                                    {% for i in locate %}
+                                    <option value="{{i.location}}" >{{i.location}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <select style="border-radius:10px; height: 50px; width: 350px; margin-top: 60px; background-color: #ffffff; " name="ends" id="ends">
+                                    <option value="">Choose Your "DROP-OFF" location</option>
+                                    {% for i in locate %}
+                                    <option value="{{i.location}}">{{i.location}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input style="border-radius:5px;height: 50px;width: 125px; margin-top: 60px; background-color: #ffffff;" type="submit" value="Checkout">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+                
             </div>
         </div>
     </div>
